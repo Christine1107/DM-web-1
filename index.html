@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--Christine Wang Web HW1: kardboard Keyboard-->
+<!--9/6/2021-->
+
+
+<!--Setup-->
+<html lang="en">
+<head>
+
+<!--specify the character encoding for my html file-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--I may want to add p5.js codes to create interactions later-->
+<!-- <script src="p5/libraries/p5.js"></script>
+<script src="p5/libraries/sketch.js"></script>-->
+
+<!--Inline CSS of my alice blue title Kardboard-->
+<h1 style="color:aliceblue; text-align:right">kardboard</h1>
+<title>Karboard Keyboard</title>
+
+<!--telling the program that we want the margin border to be counted inside the width/height-->
+<style> {
+  box-sizing: border-box;
+}
+
+/*Style the body*/
+body {
+  background-image:url("keyboarder.png");
+  background-repeat:repeat;
+  position: top;
+  background-color:black;
+  font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Style the header */
+header {
+  background-color: #6816a4;
+  padding: 60px 60px 60px 60px;
+  text-align: CENTER;
+  font-size: 28px;
+  color: white;
+}
+
+
+/* Style the content(my introduction for the keyboard) */
+content {
+  float: right ;
+  padding: 100px;
+  width: 50%;
+  background-color: black;
+  text-align: left;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: white;
+
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  background: white;
+  padding: 0;
+}
+
+/* Style the footer */
+footer {
+  background-color:white;
+  padding: 10px;
+  text-align: center;
+  color: purple;
+}
+
+</style>
+</head>
+
+
+
+<!-- Automatically play audio control-->
+<body>
+
+<audio controls autoplay>
+<source src="PDD.mp3" type="audio/mpeg"> </audio>
+
+<!-- Imported images and their width and height-->
+<img src="top.png" alt="demo1" width=100% height=300%>
+<img src="kardboard.png" alt="demo1" width=100% height=50%>
+
+
+<!-- Add the header with border and text-->
+<header style="border:10px solid aliceblue">
+  <h2 style = "color:white; paddling: 30px"> A revolutionary, cost-efficient, modifiable solution. <br><h5> -- Kardboard Keyboard</h5></h2>
+</header>
+
+<!-- More imported images and their width and height-->
+<img src="room.png" alt="demo1" width=50% height=50% position = center>
+
+
+<!-- The actual introduction of my product-->
+<section>
+  <content>
+    <h1 style = "color:white; font: Arial; ">What is kardboard keyboard</h1>
+
+    <!-- People clicking the hyperlink can go directly to purchase my product-->
+    <p style = "color:white; font: Arial"> By filling out a <a href="https://www.amazon.com/Smart-Tech-Handcrafted-Wireless-Keyboard/dp/B00G3ZHHR0">SURVEY</a>, you can have your first ever self-customized keyboard shipped to your home！ </p>
+    <p style = "color:white; font: Arial"> There are approximatly 130million gamers in the world,
+         30% of them have certain degrees of limb diabilities or special needs,
+         they want to keep playing games but failed to find a keyboard that suits their needs.
+         Most also found that professional gaming keyboards are extremly expensive and
+         unaccessible. <br> How to increase video games accessibility and use it as a way to
+         assit with recovery process is the main gaol of the Kardboard team. <br><br> And luckily! we may have an idea
+         on just what you need! <br><br> Inspired by google cardboard: An environmental friendly cardboard keyboard that
+         can be resembled by anyone according to any needs.  </p>
+  </content>
+
+<!-- The list inside the box allowing users to clik on it and learn more on different features-->
+  <nav>
+    <ul>
+      <li><a href="#">Full layouts</a></li>
+      <li><a href="#">customed button</a></li>
+      <li><a href="#">Hand cuffs for limb diabilities</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+
+</body>
+</html>
